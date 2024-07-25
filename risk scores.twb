@@ -1,0 +1,427 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0613.1930                               -->
+<workbook original-version='18.1' source-build='2024.2.0 (20242.24.0613.1930)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='fraud_detection_results' inline='true' name='federated.0o6lqh50iz9gj310a7yx009vftds' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='fraud_detection_results' name='textscan.0wpuc8217rnhz818vtmlw0dxrgyc'>
+            <connection class='textscan' directory='C:/Users/URVI GARG/Downloads' filename='fraud_detection_results.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0wpuc8217rnhz818vtmlw0dxrgyc' name='fraud_detection_results.csv' table='[fraud_detection_results#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='real' name='type' ordinal='0' />
+            <column datatype='real' name='amount' ordinal='1' />
+            <column datatype='real' name='oldbalanceOrg' ordinal='2' />
+            <column datatype='real' name='newbalanceOrig' ordinal='3' />
+            <column datatype='string' name='isFraud' ordinal='4' />
+            <column datatype='string' name='predicted_isFraud' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0wpuc8217rnhz818vtmlw0dxrgyc' name='fraud_detection_results.csv' table='[fraud_detection_results#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='real' name='type' ordinal='0' />
+            <column datatype='real' name='amount' ordinal='1' />
+            <column datatype='real' name='oldbalanceOrg' ordinal='2' />
+            <column datatype='real' name='newbalanceOrig' ordinal='3' />
+            <column datatype='string' name='isFraud' ordinal='4' />
+            <column datatype='string' name='predicted_isFraud' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[fraud_detection_results.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[type]</local-name>
+            <parent-name>[fraud_detection_results.csv]</parent-name>
+            <remote-alias>type</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fraud_detection_results.csv_15C4676F99744A1FB97D138AE2EF5856]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[amount]</local-name>
+            <parent-name>[fraud_detection_results.csv]</parent-name>
+            <remote-alias>amount</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fraud_detection_results.csv_15C4676F99744A1FB97D138AE2EF5856]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>oldbalanceOrg</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[oldbalanceOrg]</local-name>
+            <parent-name>[fraud_detection_results.csv]</parent-name>
+            <remote-alias>oldbalanceOrg</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fraud_detection_results.csv_15C4676F99744A1FB97D138AE2EF5856]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>newbalanceOrig</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[newbalanceOrig]</local-name>
+            <parent-name>[fraud_detection_results.csv]</parent-name>
+            <remote-alias>newbalanceOrig</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fraud_detection_results.csv_15C4676F99744A1FB97D138AE2EF5856]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>isFraud</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[isFraud]</local-name>
+            <parent-name>[fraud_detection_results.csv]</parent-name>
+            <remote-alias>isFraud</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fraud_detection_results.csv_15C4676F99744A1FB97D138AE2EF5856]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>predicted_isFraud</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[predicted_isFraud]</local-name>
+            <parent-name>[fraud_detection_results.csv]</parent-name>
+            <remote-alias>predicted_isFraud</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fraud_detection_results.csv_15C4676F99744A1FB97D138AE2EF5856]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='TypeCount' datatype='integer' name='[Calculation_1384012502562508800]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([type])' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='fraud_detection_results.csv' datatype='table' name='[__tableau_internal_object_id__].[fraud_detection_results.csv_15C4676F99744A1FB97D138AE2EF5856]' role='measure' type='quantitative' />
+      <column caption='Amount' datatype='real' name='[amount]' role='measure' type='quantitative' />
+      <column caption='Is Fraud' datatype='string' name='[isFraud]' role='dimension' type='nominal' />
+      <column caption='Newbalance Orig' datatype='real' name='[newbalanceOrig]' role='measure' type='quantitative' />
+      <column caption='Oldbalance Org' datatype='real' name='[oldbalanceOrg]' role='measure' type='quantitative' />
+      <column caption='predicted isFraud' datatype='string' name='[predicted_isFraud]' role='dimension' type='nominal' />
+      <column caption='Type' datatype='real' name='[type]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[fraud_detection_results.csv_15C4676F99744A1FB97D138AE2EF5856]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:fraud_detection_results.csv_15C4676F99744A1FB97D138AE2EF5856:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[predicted_isFraud]' derivation='None' name='[none:predicted_isFraud:nk]' pivot='key' type='nominal' />
+      <column-instance column='[amount]' derivation='Sum' name='[sum:amount:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[newbalanceOrig]' derivation='Sum' name='[sum:newbalanceOrig:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[oldbalanceOrg]' derivation='Sum' name='[sum:oldbalanceOrg:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[type]' derivation='Sum' name='[sum:type:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:predicted_isFraud:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Fraud&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;No Fraud&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0o6lqh50iz9gj310a7yx009vftds].[sum:amount:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0o6lqh50iz9gj310a7yx009vftds].[sum:oldbalanceOrg:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0o6lqh50iz9gj310a7yx009vftds].[sum:newbalanceOrig:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0o6lqh50iz9gj310a7yx009vftds].[__tableau_internal_object_id__].[cnt:fraud_detection_results.csv_15C4676F99744A1FB97D138AE2EF5856:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0o6lqh50iz9gj310a7yx009vftds].[sum:type:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='fraud_detection_results.csv' id='fraud_detection_results.csv_15C4676F99744A1FB97D138AE2EF5856'>
+            <properties context=''>
+              <relation connection='textscan.0wpuc8217rnhz818vtmlw0dxrgyc' name='fraud_detection_results.csv' table='[fraud_detection_results#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='real' name='type' ordinal='0' />
+                  <column datatype='real' name='amount' ordinal='1' />
+                  <column datatype='real' name='oldbalanceOrg' ordinal='2' />
+                  <column datatype='real' name='newbalanceOrig' ordinal='3' />
+                  <column datatype='string' name='isFraud' ordinal='4' />
+                  <column datatype='string' name='predicted_isFraud' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='fraud_detection_results' name='federated.0o6lqh50iz9gj310a7yx009vftds' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0o6lqh50iz9gj310a7yx009vftds'>
+            <column caption='TypeCount' datatype='integer' name='[Calculation_1384012502562508800]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([type])' />
+            </column>
+            <column-instance column='[predicted_isFraud]' derivation='None' name='[none:predicted_isFraud:nk]' pivot='key' type='nominal' />
+            <column caption='predicted isFraud' datatype='string' name='[predicted_isFraud]' role='dimension' type='nominal' />
+            <column-instance column='[type]' derivation='Sum' name='[sum:type:qk]' pivot='key' type='quantitative' />
+            <column caption='Type' datatype='real' name='[type]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1384012502562508800]' derivation='User' name='[usr:Calculation_1384012502562508800:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0o6lqh50iz9gj310a7yx009vftds].[sum:type:qk]' num-steps='5' type='interpolated' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.0o6lqh50iz9gj310a7yx009vftds].[usr:Calculation_1384012502562508800:qk]' />
+              <color column='[federated.0o6lqh50iz9gj310a7yx009vftds].[sum:type:qk]' />
+              <text column='[federated.0o6lqh50iz9gj310a7yx009vftds].[none:predicted_isFraud:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='has-stroke' value='true' />
+                <format attr='size' value='2' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{0EB07BAE-60D4-41BA-B74F-DA4DFC349C1C}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0o6lqh50iz9gj310a7yx009vftds].[sum:type:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0o6lqh50iz9gj310a7yx009vftds].[:Measure Names]</field>
+            <field>[federated.0o6lqh50iz9gj310a7yx009vftds].[none:isFraud:nk]</field>
+            <field>[federated.0o6lqh50iz9gj310a7yx009vftds].[none:predicted_isFraud:nk]</field>
+            <field>[federated.0o6lqh50iz9gj310a7yx009vftds].[sum:type:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{747A3943-1332-4385-80BD-05A2AF2EE2AE}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='164' name='Sheet 1' width='164'>
+      iVBORw0KGgoAAAANSUhEUgAAAKQAAACkCAYAAAAZtYVBAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAWhElEQVR4nO2de3RU1b3HvzNz5p3JzOSdSUgI4U0MAgnlUYNoBdEKtCJW76WK9XFbfJbr
+      7UUsZfVWaO1qe1Fbr3a1lUtdqwhtI1wRrYJBlEeCITQJKkQISSaPSTKvJPM+5/4xnEkmM8mc
+      mczjzGR/1sqC7HPOPnuSb/bv99uP3xYwDMOAQOAJwkQ3gEAYCREkgVcQQRJ4BREkgVcQQRJ4
+      BREkgVcQQRJ4BZXoBiQbHQYT9AYzOgwmdBjM0BtM18vNvntGlv3Pi0/7ymWUAAAgF3v7ATkl
+      hJwSQkYJkCEnvwqACHJMRgqvtrkVHQYzaptbw67H5qZH/N/7r9HuCXqvnPIKVSsXQU4JoZWJ
+      Jp1QJ9enHQdWgGebW1F7/SvesOK1WWm/cjklhE4lnhQCTe1PF4IOgwnVNRcSJkCu2Nw0WowO
+      3/esQEu10gS2KjZMOkGyJpgVYjLCCrTF6Eg5cU4KQbIiZIWYSowUp04lRoaMgk4lTnSzIial
+      Bcma5N8dPJHopsQFvdUFvdXlE2cy9popKcjJJsTRsL2m3upKOmGmlCAnuxBHM9Kcl2ql0KnE
+      vqElvpISgiRCDE2yCDOpBUmEGD4jhclHU560gqxtbsX2Vw/5TdkRuMP6mPOyZbwabOdPSzhC
+      esXoYXPTqOscglYmQlmOnBdmPKkE+duDJ4gQY4DR7sHH1wZ4YcaTQpCkV4wPLUYH+m1uVOqU
+      CWsD7wXZYTBh80/3EV8xTrC9ZaJ8S94KkvSKiYP1LRNhwnkpyA6DCdtfPZy0ix9ShUSY8MSH
+      VaNgTTQRIz9gTXg/u7o4xvBKkB0GE1Y98QrxF3kGa8LjIUreCLK6pgGrnngl0c0gjEM8RMkL
+      Qf724Alsf/VwoptB4EBd5xD0VlfM6k+4IMlgd/LRaLCh0WCLSd0JFSQRY/Kit7pQqx+Mer0J
+      EyQRY/JjtHv8Np9Fg4QIkogxdWBXDUWLuAuyuqaBiDHFaDTYohZ9x1WQ3jWMJJpORaI1JBQ3
+      QXYYTHjwp/vi9TpCAoiGKOMiSHY6kJD6NBnsfvmMwiXmgmQXSpDpwMmBzU2jsSfyMcqYCzKZ
+      U5YQImMiw0ExFWRtcyuJqCcp7NK1cImZIL2m+lCsqickAU0Ge9jPxEyQxG8k2Nx02NOLMRFk
+      dU0D8RsJAML3J6MuSDaqJhBYWowOzkNBURckESMhGFyHgqIqSL6nRiYkDqPdwynqjpogOwwm
+      /JYM8RDGgUvUHTVBkt6REIrRyfuDERVBkkCGwJVQAU5UBEnESAiH8XrJsDNXnD9/Hps3b8a6
+      deuwc+dO3wkHAACGhqm1Ab1NH8E5aIRAIESabhZ0FesgkiqC1tf+6X5Y2hqDXsuetxLZZbcA
+      AGi3A931R2G6Wg8A0ExdgNwFt0NIjZ3qg/a40Pf5SfR/eQoelx1SVRbyK9dDkVUUcK/d1An9
+      mb9DVTDb904AsPW1obVmL2hX4A9RrEjH1Fsfg1iRPmYbCIHorS6UaqVB0/9xFqTJZMLWrVtR
+      U1ODgoICX/nIuequ+iNwWvtQuPw+yNS5oD1OGBqPQ1/3NgqXboRAKAqot3DZvQDu9Suj3U50
+      nD4IRVYxAIChPeg69w4Y2oNZ39oGAOisPYSuc+8gv3Jd0HrBMOiuPwK3YwjT73gKIokc5muN
+      6Dj1FgqXfQfyzEIAgMdlR3f9uxgyXAUlDxSWPHMKZn/7+YByq/5zmK+cByUL/odGGJ8WowNl
+      2fKAcs4me+/evVi6dCmam5uxcuVKAMMJoVg00ypQVPVdyDR5gEAAISVFxsxlcNuscNu5TyHZ
+      +jsAAPKsKQAAh7kbLpsZeQvvgJCSQkhJkbfwDrhsZjjM3UHrsJu74bT2IX/RXRBJlYBACHVx
+      OTQlC2FsqQUYBgBgvlIPRVYRStc8CWVOCaf2MbQH5qsNUJfcCIGQl+mReI/e6grqS3L+aT71
+      1FMBZaNX8sg0eQH30G47hJQEQorbqxjaA+PlM9CULICQkgAA7MZOSNV5XmFdRyRVQqrOg93Y
+      CZlWF1CPx2mDWKkBJUvzK0/Ln4Hu8+/B47JBJFEgY+ZSTu0ayVDvNdBuJ5Q508J+ljBMsF4y
+      4qDGOmgPeSqWa8iCzrpD0JQsgEjCzbTZjXowtAfK3NIR9ZghUaoD7pUo1XANBV/AIaTEcNsH
+      Anw/Sq4Gw9Cg3ZEttWdoD8xX6qEtrfD9wRAiI9huxYgFOe5KHoaBpa0RVz98HRkzlkBdVM6t
+      UoaB8atzUBXMCfhlB/PvgpWxSNNzAIaBoek4aLdXlG6bFebWBnicka9oZt0HRfbUiOsgDDM6
+      4o7IAbIO2nGs7gtklxUEXKM9LnTXvwu7UY/ilQ9BkpbBuV67qROuQSNU81cHXHPbLJzKWISU
+      BAVL7kFX/RF88ffdYBgaEqUW6uLyyHs2hkH/5bNQF8+HSBLokBPChz2ihCUiQVqGgk8BMbQb
+      nXWHQMnSMPXWh8Nz+BkGxpY6pE+5IeCXLVaoYTf3BDziHDRDps4Zs0qRVIGCJRtQsGSDr8zW
+      1wZbvx4iSfiZYe3mLriGTFDpbgv7WcLYsEfgARGa7LGmCE1XzgMAcm64Nezo02HthdPaC5Vu
+      VsA1mTYfDnMXPI7hSN3jGITD3AWZNp/7SxgGlrYmKHNKxh2/HOtZ89UGpOXN8AuuCBOn3z7s
+      z4ctyA6DCfog/iPjcWGg6xIypi+OaCjEdOUzpOXPBCVXBVyTqnMhlqvR9dkR0G4HaLcDXZ8d
+      gViuhlSdO2adxpZa2I16gKFBux3oaTwGu6kTmmmLwm6fc6Aftv4O7v4wgTMjgxtOyrFYLFi9
+      ejVOnz7tV25oOg7AO7ityCqC3ajHlQ9eD3h+5IyGteMiDI3HULTiQVAyb0/jsBhg62tH4dKN
+      Qd8vEIqQt+hOdNcfxRd/3w1geKaGHRSn3U60ffxnqArnImPGEu+HkyrRcfogHNZeCARCpBfO
+      g27x3T6XgHY50FqzF7a+tjE/V/qUsuvuRC1UullB/2AIE4c12wKGuT5CzJEHJ5D/m3Y70X7q
+      LWhLK6DSzY6ojrGw6j+HsaUOhUs38mo45je7nkx0E5ICnUqMsmx5eCbbb946Amy9bVBkFUGV
+      H+gnTgSGdmOw6zLyblzDKzESuMPO3ITl7E10vaMyrxTKvNLQN4aJQEghb+E3o14vIb4YbZ7w
+      eshQMzMEwkTot7u5C3Ki5ppACIXe6uIuyGBDPQRCtOEsyLOkdyTEAc6CJOaaEA84CZL4j4R4
+      wUmQxH8kxAtO45DB/EdLWyPaT72F3PmrkTlrud81Q+MxAPDbLBUOlrZGtH+6P6B85KaveGNp
+      a4TD3JOw908WOAlSbzAFLVcXz8dg91dQF5VHfY43fUrZ9Q1ghMkERx8yuMmWKLWQZxR4N00R
+      CFFgQj0kAGhLK6E/+ze4Bo0QK7VB72FoN3ovnkT/l5/C47RBospE3sJvIi1vekSNZs1n5uzl
+      6Kw7hIHOSyiq2gR5RiHM1y7A0HgMzkEjAAGUuSXQVayHWKkBENydsLQ1wtLWNNwjMwysHRfR
+      df4oXINGCERiSJQa78ofQkwJKcgOg2nc/TOUXAVl3nQYW2qRU74q6D29F0/C1ncNJd94DJK0
+      DAz1tqKz7jCEFWuhyC6OqOG0x4XOusMQKzMw466tEFJS0G4H3DYLCpfdC5kmDwzDoP/SGXQ3
+      HEXBknuC798OgqWtEYbmj1C4dCPkGQVgaDf6L58NmiyAEF1CCpJLhK0uKkfH6QNwWAyQpmf7
+      XXPbBzDU8xXyK9ZBosoEACiypyJz9nL0Xz7jzSIhEATUaWlrRPN+/4wWvvWJAMytDcidfzvU
+      xcMLZoWUFJmzb/J9LxB4fVFbbytojwsiDoKk3U6Yr12ArnK9L5mAQCSGWKGGI8g2CkJ0icou
+      d0quQnpROUxfnUPuqA1ariETBCIqYH+0TKuDtb0ZtNsJoThwO0GooCa9cB7URTcElA92f4Xu
+      hvdgN3UBjHcjuliRDtrlhEgsC/lZPE47BAIhJKP+sAjxIaQguU4ZphfOQfvpA7CbuybcKC6I
+      JPKAntVu6kTPhfeRW74KytwSQCCEa8iC9k//El7lAiEECOy1CbEnZJQ9XkAzEpFUCXVROYyX
+      /SNusUID2u2Ca9SWVbtRDwElieqCWqe1D2n5M71rLgWRbTkXCIVw2wfgtluj1i4Cd0L+1sI5
+      2iO9cB5cQ2bYTZ2+MkqWBmVuKbrPvwuntQ9gGAwZrqLv80+QMf1rQf3HSBGKxBjsuQK3zQow
+      NGz97dCfOegnLrFCDYelB7TbAcbjgrn1Anr++YF/e3NK0FX/7vV6GNiNevQ2k+zA8SCqmZKE
+      Yim0pRVo/3Q/ZJrh7alZc76O3osnceWD1/yGfSKNsMdCmVeKob42XHrnNwBDQ5FdjIxZy9Hb
+      XOO7R1U4FwOdX+Lzv+2CQChCeuEcaKdV+BJcAUDmnJvQc+EfuPTOb8DQHqjyZ0BdXA7a7Yxq
+      ewmBhNzkNZFNXQSyyStc4nqAO4EQiqgFNQRCNCA9JIFXRDXKJhAmSkhBFmQHJgolEGIFMdkE
+      XkEESeAVIQWpy9bEox0EAgDSQ056utuv4fmHNmDXk5s5P9PS/E88+e1bsGZmBu6cnY2dj90P
+      o2H4eBaX04E3X3kR68sLsGZmBnY8ci96u/S+6/v27MbqUnXQLxLUTFIcNhv27dmNZzauAiUW
+      g2G4HbDeWHcKv/z3x3D/lmfxzkUD/nb+Gm67+z4MWocXz7z1+h589vEx/PGDczjc1IVpc8rw
+      ix8+gqEB75qCTU9tw3stZr+vo5eMuPO+zaSHnKw0nD4BhmHwh3/U4ZZ13DbTud0uvP2/r+HB
+      rT/GklvXQCgSQSqTY/mqu1A4bQYAoK+7E/WffISnd72EjJw8UGIJ/uXx/4BKo0XD6bEXqOiv
+      XUHH1RbiQ05WFq9cje8+/RzkyrTQN1+n7fKXsPT3Ye6ir415z7WWL6HJzEJ+8fCpaGKJFJUr
+      bkPD6ZNjPvfuX/aiYsU3iMkmcMfQ2Q6JVIa3976G+5fNxupSNTYsmoo3X3kRLqd3v5HVZERa
+      ugYUJfZ7NjMnD6Y+Q9B6u9paceWLRtyydiMXQZIekuDFbrPhUlMDtFk5eO3IKbzXYsaev36I
+      2o/ex6F9v/fdl5kbeDKGSqOFVBb8bJ+Pj1ajZFYZMnPzQwuycm501ywSkpu5Cxfjzvs2Q6Xx
+      bnkumFqKh57diXMffwjb4AAArx85GqvJCIc98AS1vu5OnD3+PtZ85wEAHId9iNkmAEBuwRRY
+      jP2wWvxXgOmKp0EskcLtckGl0WLAYoLb7X+OYV9PFzSZgRvnPvq/v2LGDQugK/L6nCTKJnBG
+      VzwNLqcDTXWn/MrbvroEhmEgkclQVDoTpr5edLZe8V13OR2orfkH5i/5ut9z5v5e1J34ALeu
+      uxcCoVeKnARJzDYB8PqBazc9itd+9hwunDkJhqbRcbUFf37p57h1/b2QyuTIzM3HguU347+f
+      exL9PV1wu5x485UXYTUZMX9JlV99Z44dRY5uCqbNnucr47Snhgz9pB4vPPEAThyp9is7ccTr
+      mv3rk/+JTU9tw+WmBvz8mYex/eU3UDLLK5pb1t4DmUKBX/3oB+hqa4U6IwuPbPsvVK1Z76tn
+      46Pes9Uf+sYiOOw2VK64DT/69e+hSBtOSGbu78WH1fvxyLaf+XpHgMOeGgCormnA9lcPT+Dj
+      T16SdU8NQ9N4eccPUVAyHXd/7/G4vZeTyV6/Yn6s20HgGe1XLkMik2Ptpkfi+l7OQQ3xIycX
+      U0pn4t+e3w1xBMc4TwQiSAKv4CxIMhZJiAecBUn8SEKskVPC8AbGidkmxBIZJQhPkOtXlIe+
+      iUCIkAw5Fa4gidkmxA6tTBT+XDYx24RYoJWJwu8hAWK2U4UTR6qDbrLat2d3QtpToJLgwIED
+      4eeHXL9iPplGTBGq7liP7S/vTXQzIKeE0Km8K8wjWn5GeklCNJFRw1mUIxIk8SNTnxNHqrFv
+      z27YBgfw82cext0Li3Gx/iwYmsaH1fux+ZYFuH2GFmtmZmDbA+vR09Hme3bfnt0Bpv/EkWq8
+      8MQDvu8ZmsYn7x/GAzeXY3FBGhQKBXbs2BFpDzmfzNxMAhw2G1768TPInzIVf/64CXMWLIbd
+      NoS+nk4899KfcOTzXhxu6kLlitvw+u7tAavEx+PEu9XY++sXsPPlP8Hj8aCvrw8PP/xw5CvG
+      15EhoKQnWGAzco3kh2/vx+KbV+GBHz7v2y4rV6Zh46NPY0bZjRCKRKDEElTd8S3QNA370BCn
+      99qHhnD80AE8s/slLF+2BEKhEHK5HEVFRZEnvd+yoQq/O0hOJkhmQgU1N92+Djd/8+6A8vpP
+      a/CHX+xAy8V/gvZ4AABZeTrYhwaRlh7acg5YTBCKRJgxaw7Ksv13Ik5oTw0JblIblUbrt5ob
+      8Ob1+eOLP8FDz+7EOxcNeK/FjDc/uYjs/MKw6haJRMhUiAPKJyTIF76/diKPE5KQjqstWLxy
+      NRZ+fSWEIm6HmY5GRFEw9xkgt/cHXJvwrkPSS04uZHI5Lpw5if6eLtAeD75oOIcXtz6Kvp7h
+      vdhZeTq0XroI2+AAHHYbjh86gDd+9VPfdW1WDpbddDO2PbsVnZ2doGka586dw65duyYuyB9s
+      qAp9EyFlWLD8ZsyrWIIHV96Iu+bl4Y+/3Im7v/c4MnOGs1XcdPs60DSNby8owj2LSnDm+Hu+
+      RACAdyB8+7YfYfr06SgtLYVEIsHOnTtx//33c9vkFYrtrx5Cdc2FiVaTkiTrJq9YopWJUKlT
+      Br0WlUQBpJckcEVOCVGWEzzHDxAlQRZka4goCZzQqcSQU2PLLmqpVLZsqCKzN4RxkVNClGrH
+      38UY1dw+ZBiIMB7zsmUh74mqICvnFpOFF4SgsAtwQxH17GcvfP+uaFdJSHJCBTIjibogSYBD
+      GE2oQGYkMckPuWVDFTHdBABeUx0qkBlJzBKWEtNNCMdUs8RMkAXZGryxY1OsqifwHDklxLxs
+      GWdTzRLTlM6Vc4uJPzlJ0anEnKLq0cQ8xzjxJycfXAbAxyIuSe+JPzl5kFNCVOgUET8fF0ES
+      f3JyEKnfOJK4HQtSObeYiDKFYcUYid84krieU0NEmbpEGsSMJu4HJ1XOLSY+ZYpRqpVGHMSM
+      JiEnea1fMZ/sxUkRoilGIIFHy73w/bVkOCjJibYYgQSfdfjGjk1k4DxJiYUYAR4cvrllQxXx
+      KZOMWIkR4IEgAa9PSaJv/sPOwMRKjABPBAmQISG+Ew8xAjwSJEBEyVfY6UA2y20s4ZUgAa8o
+      33/5cRKB8wRWjBOZDgwH3gkSGJ77JhF44mBN9E1FaXETI8BTQbJs2VBFTHgCiJe/GAxeCxIg
+      JjzeaGWiuPmLweC9IAFiwuMB2ytW6pRxNdGjSQpBsmzZUEV6yxigU4lRoVMkxESPJqkECQz3
+      lm/s2ERyCU0QOSVEWbYcZdnyhPaKI+FHKyLA61s+Qcx4BIyMoBPlK45FVBKWJpoOgwnVNRd4
+      eSoEnxKWyikhtHLvxn2+9IijSQlBsvBRmHwQZDIIkSWlBMnCJ2EmUpDsoZbh5NZJNCkpSBY+
+      CDMRgmSFyIeoOVxSWpAjqW1uRXVNQ9yT88dLkKxZzpBRvAtUwmHSCJKF7TVrm1tR29wa8/fF
+      WpBamQgFKklSi3AkE9+3mGQUZGuw5fpQUbzFGQ3klBAySoAMOZVUviFX/h+aZQm1QRB0yAAA
+      AABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
