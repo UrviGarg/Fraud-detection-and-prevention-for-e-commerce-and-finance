@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Behavioral Biometrics Data Collection</title>
+</head>
+<body>
+    <script>
+        let mouseData = [];
+        let typingData = [];
+
+        // Collect mouse movements
+        document.addEventListener('mousemove', (event) => {
+            let timestamp = Date.now();
+            mouseData.push({
+                x: event.clientX,
+                y: event.clientY,
+                time: timestamp
+            });
+        });
+
+        // Collect key events
+        document.addEventListener('keydown', (event) => {
+            let timestamp = Date.now();
+            typingData.push({
+                key: event.key,
+                type: 'keydown',
+                time: timestamp
+            });
+        });
+
+        document.addEventListener('keyup', (event) => {
+            let timestamp = Date.now();
+            typingData.push({
+                key: event.key,
+                type: 'keyup',
+                time: timestamp
+            });
+        });
+
+        // Function to send data to server or save it
+        function saveData() {
+            // Send data to server or save locally
+            console.log(mouseData);
+            console.log(typingData);
+        }
+
+        // Call saveData periodically or on an event
+        setInterval(saveData, 10000);
+    </script>
+</body>
+</html>
